@@ -7,7 +7,7 @@ def init():
     global model
     
     device = 0 if torch.cuda.is_available() else -1
-    model = pipeline('fill-mask', model='bert-base-uncased', device=device)
+    model = pipeline('fill-mask', model='roberta-large', device=device)
 
 # Inference is ran for every server call
 # Reference your preloaded global model variable here.
